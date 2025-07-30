@@ -590,6 +590,234 @@ footer {
   background-color: #155fb0;
 }
 
+/* --- Triangle Game Section --- */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #006494;
+}
+
+#triangle-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.triangle-row {
+  display: flex;
+  justify-content: center;
+}
+
+.token {
+  width: 40px;
+  height: 40px;
+  margin: 6px;
+  background-color: #0077b6;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.token:hover {
+  background-color: #023e8a;
+}
+
+.token.removed {
+  background-color: #ccc;
+  cursor: default;
+}
+
+.game-controls {
+  margin-top: 1.5rem;
+}
+
+#game-status {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  color: #222;
+}
+
+
+.game-rules, .game-area {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  background-color: #fefefe;
+  border-radius: 8px;
+}
+
+#heap-display {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.heap {
+  padding: 10px 14px;
+  border: 2px solid #333;
+  border-radius: 6px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.heap:hover {
+  background-color: #e0e0e0;
+}
+
+.controls {
+  margin-top: 10px;
+}
+
+.controls input {
+  width: 180px;
+  padding: 6px;
+  margin-right: 10px;
+}
+
+
+.difficulty-buttons {
+  margin-bottom: 15px;
+}
+
+.difficulty-buttons button {
+  margin: 5px;
+  padding: 8px 14px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background-color: #e2e2e2;
+  transition: 0.2s;
+}
+
+.difficulty-buttons button:hover {
+  background-color: #222020;
+}
+.difficulty-buttons button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#heap-display span {
+  padding: 10px;
+  margin: 5px;
+  background: #3a3737;
+  border: 1px solid #ccc;
+  display: inline-block;
+}
+
+.player-controls {
+  margin-top: 20px;
+}
+
+#game-status {
+  margin-top: 20px;
+  font-weight: bold;
+  color: green;
+}
+
+/* --- Binary Split Game Styling --- */
+.difficulty-btn {
+  margin: 0.3rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #eee;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.difficulty-btn:hover {
+  background-color: #3b3838;
+}
+
+.difficulty-btn.selected {
+  background-color: #0077cc;
+  color: white;
+}
+
+.heap-button {
+  padding: 0.6rem 1.2rem;
+  margin: 0.5rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: 2px solid #444;
+  background-color: #f5f5f5;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.heap-button:hover {
+  background-color: #3ac854;
+}
+
+.slider-container {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#move-slider {
+  width: 60%;
+}
+
+.game-status {
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.heaps-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.rules {
+  background-color: #1c1b1b;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.no-bullets {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.action-button {
+  background-color: #4CAF50; /* A nice green */
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.action-button:hover {
+  background-color: #1f5022;
+}
+
+.action-button:active {
+  transform: scale(0.98);   
+}
+
 
 /* Mobile Styles */
 

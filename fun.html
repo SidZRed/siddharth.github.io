@@ -1,31 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Fun - Siddharth Reddy</title>
-    <link rel="stylesheet" href="css/style.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fun Zone | Siddharth</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <header>
-        <nav>
-            <ul class="navbar">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="fun.html" class="active">Fun</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="hero">
-        <div class="hero-text">
-            <h1>Fun</h1>
-            <p>[Put hobbies, puzzles, games, or easter eggs here]</p>
-        </div>
-    </main>
+  <header>
+    <nav>
+      <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="fun.html" class="active">Fun</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1 class="section-title">Binary Split Game</h1>
+
+    <div class="rules">
+      <p><strong>Rules:</strong></p>
+      <ul class="no-bullets">
+        <li>You start with a single heap of size <code>n</code>.</li>
+        <li>Each move, you must split any heap of size greater than or equal to 2 into two <b>unequal</b> positive integers.</li>
+        <li>The player who cannot make a move loses.</li>
+      </ul>
+    </div>
+
+    <div>
+      <p>Select Difficulty:</p>
+      <button class="difficulty-btn" onclick="startGame(10, this)">Easy (n=10)</button>
+      <button class="difficulty-btn" onclick="startGame(25, this)">Medium (n=25)</button>
+      <button class="difficulty-btn" onclick="startGame(50, this)">Hard (n=50)</button>
+      <button class="difficulty-btn" onclick="startGame(100, this)">Extreme (n=100)</button>
+    </div>
+
+    <div class="slider-container">
+      <label for="move-slider">Select split point:</label>
+      <input type="range" id="move-slider" min="1" max="1" value="1" />
+      <p id="slider-value">1</p>
+      <button class="action-button" onclick="makeMove()">Split</button>
+    </div>
+
+    <div class="heaps-container" id="heaps-container">
+      <!-- Heap buttons will appear here -->
+    </div>
+
+    <div class="game-status" id="game-status"></div>
+  </main>
+
+  <script src="js/binary-split.js"></script>
 </body>
 </html>
