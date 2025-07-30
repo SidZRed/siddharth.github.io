@@ -34,3 +34,11 @@ footer {
   padding: 1rem;
   background-color: #eee;
 }
+
+body {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+body.fade-in {
+  opacity: 1;
+}
