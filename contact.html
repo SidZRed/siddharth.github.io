@@ -1,31 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Contact - Siddharth Reddy</title>
-    <link rel="stylesheet" href="css/style.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet"/>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet"/>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul class="navbar">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="fun.html">Fun</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="hero">
-        <div class="hero-text">
-            <h1>Contact</h1>
-            <p>[Provide email, socials or a contact form]</p>
-        </div>
-    </main>
+  <header>
+    <nav>
+      <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="fun.html">Fun</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contact-main">
+    <h1>Let's Connect</h1>
+    <p class="intro">Have a question, idea, or opportunity? Feel free to reach out!</p>
+
+    <div class="contact-details">
+      <p><strong>Email:</strong> <a href="mailto:siddharth@example.com">siddharth@example.com</a></p>
+      <p><strong>Phone:</strong> +91-9876543210</p>
+      <p><strong>Location:</strong> IISc Bangalore, India</p>
+    </div>
+
+    <div class="socials">
+      <a href="https://github.com/yourhandle" target="_blank">GitHub</a> |
+      <a href="https://www.linkedin.com/in/yourhandle" target="_blank">LinkedIn</a> |
+      <a href="https://twitter.com/yourhandle" target="_blank">Twitter</a>
+    </div>
+
+    <section class="message-form">
+      <h2>Send me a message</h2>
+      <form action="https://formspree.io/f/mblkkldk" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required/>
+        <input type="email" name="_replyto" placeholder="Your Email" required/>
+        <textarea name="message" rows="5" placeholder="Your Message..." required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
 </body>
 </html>
