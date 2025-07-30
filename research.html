@@ -1,31 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Research - Siddharth Reddy</title>
-    <link rel="stylesheet" href="css/style.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Research - Siddharth Reddy</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet"/>
+  <script defer src="js/filter.js"></script> <!-- We'll add basic filtering here -->
 </head>
 <body>
-    <header>
-        <nav>
-            <ul class="navbar">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="research.html" class="active">Research</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="fun.html">Fun</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="hero">
-        <div class="hero-text">
-            <h1>Research</h1>
-            <p>[Insert areas of research, papers, topics of interest]</p>
+  <header>
+    <nav>
+      <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="research.html" class="active">Research</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="fun.html">Fun</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="research-page">
+    <!-- FILTER BUTTONS -->
+    <div class="filters">
+      <span class="filter-button" data-filter="all">All</span>
+      <span class="filter-button" data-filter="game-theory">Game Theory</span>
+      <span class="filter-button" data-filter="ml">Machine Learning</span>
+      <span class="filter-button" data-filter="ai">Artificial Intelligence</span>
+      <span class="filter-button" data-filter="algorithms">Algorithms</span>
+      <span class="filter-button" data-filter="nlp">NLP</span>
+      <span class="filter-button" data-filter="general">General</span>
+    </div>
+
+    <!-- PROJECTS -->
+    <section>
+      <h1>Projects</h1>
+      <div class="cards-container">
+        <div class="card project-card ml game-theory">
+          <h2>Bounded Rationality in Resource Allocation Games</h2>
+          <p class="card-meta">Jan 2025 – Present | Advisor: Prof. ABC</p>
+          <p>Agent-based simulations with bounded rationality, combining game theory with best-response and social learning.</p>
+          <div class="card-links">
+            <a href="#">[GitHub]</a>
+            <a href="#">[Paper]</a>
+            <a href="#">[Slides]</a>
+          </div>
+          <div class="tags">
+            <span>Game Theory</span><span>Machine Learning</span>
+          </div>
         </div>
-    </main>
+
+        <div class="card project-card algorithms general">
+          <h2>Equilibrium Computation in Multi-agent Systems</h2>
+          <p class="card-meta">Summer 2024 | Independent Study</p>
+          <p>Fast heuristics for computing equilibria in structured games using convex optimization and randomized techniques.</p>
+          <div class="card-links">
+            <a href="#">[GitHub]</a>
+          </div>
+          <div class="tags">
+            <span>Algorithms</span><span>General</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section>
+      <h1>Publications</h1>
+      <div class="cards-container">
+        <div class="card publication-card ml ai">
+          <h2>Learning Dynamics in Resource Allocation Games</h2>
+          <p><strong>Siddharth Reddy</strong>, ABC, XYZ</p>
+          <p><em>Under Review, NeurIPS 2025</em></p>
+          <div class="card-links">
+            <a href="#">[arXiv]</a>
+            <a href="#">[Code]</a>
+            <button class="toggle-bib">[BibTeX]</button>
+          </div>
+          <div class="bibtex hidden">
+            <pre>
+@article{reddy2025learning,
+  title={Learning Dynamics in Resource Allocation Games},
+  author={Reddy, Siddharth and ABC and XYZ},
+  journal={NeurIPS (under review)},
+  year={2025}
+}
+            </pre>
+          </div>
+          <div class="tags">
+            <span>Machine Learning</span><span>Artificial Intelligence</span>
+          </div>
+        </div>
+
+        <div class="card publication-card game-theory nlp">
+          <h2>Efficient Algorithms for Multi-Agent Learning</h2>
+          <p><strong>Siddharth Reddy</strong>, XYZ</p>
+          <p><em>Preprint, 2024</em></p>
+          <div class="card-links">
+            <a href="#">[arXiv]</a>
+            <button class="toggle-bib">[BibTeX]</button>
+          </div>
+          <div class="bibtex hidden">
+            <pre>
+@article{reddy2024efficient,
+  title={Efficient Algorithms for Multi-Agent Learning},
+  author={Reddy, Siddharth and XYZ},
+  year={2024},
+  journal={arXiv preprint arXiv:2404.xxxxx}
+}
+            </pre>
+          </div>
+          <div class="tags">
+            <span>Game Theory</span><span>NLP</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>

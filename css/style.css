@@ -229,6 +229,149 @@ footer {
 }
 
 
+.research-page {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.projects h1, .publications h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ccc;
+}
+
+.project {
+  margin-bottom: 2rem;
+}
+
+.project-meta {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.project-links {
+  list-style: none;
+  padding: 0;
+  margin-top: 0.5rem;
+}
+
+.project-links li {
+  display: inline;
+  margin-right: 1rem;
+}
+
+.pub-list {
+  padding-left: 1.2rem;
+}
+
+.pub-list li {
+  margin-bottom: 1.5rem;
+}
+
+
+.filters {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.filter-button {
+  display: inline-block;
+  background: #161515;
+  padding: 0.4rem 0.8rem;
+  margin: 0.3rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.filter-button:hover,
+.filter-button.active {
+  background: #4fb136;
+  color: rgb(26, 25, 25);
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+
+.card {
+  background: #1e1d1d;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1.2rem;
+  flex: 1 1 calc(48% - 1rem);
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.card-meta {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.card-links {
+  margin-top: 0.6rem;
+}
+
+.card-links a,
+.card-links button {
+  margin-right: 0.7rem;
+  font-size: 0.85rem;
+  text-decoration: none;
+  background: #2a2828;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.card-links button:hover,
+.card-links a:hover {
+  background: #ccc;
+}
+
+.tags {
+  margin-top: 0.8rem;
+}
+
+.tags span {
+  display: inline-block;
+  background: #d4e5ff;
+  color: #004080;
+  padding: 0.25rem 0.5rem;
+  margin: 0.2rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+}
+
+.bibtex {
+  background: #121212;
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+  border-left: 3px solid #ede5e5;
+  font-family: monospace;
+  white-space: pre-wrap;
+  font-size: 0.8rem;
+}
+
+.hidden {
+  display: none;
+}
+
+
 /* Mobile Styles */
 
 @media (max-width: 768px) {
