@@ -21,11 +21,86 @@
             </ul>
         </nav>
     </header>
-    <main class="hero">
-        <div class="hero-text">
-            <h1>Skills</h1>
-            <p>[Add programming, tools, frameworks, etc.]</p>
-        </div>
+
+    <main class="skills-page">
+        <section class="skills-section">
+            <h2>Technical Skills</h2>
+            <div class="skills-tags">
+                <span>Python</span>
+                <span>C++</span>
+                <span>LaTeX</span>
+                <span>HTML/CSS/JS</span>
+                <span>Git/GitHub</span>
+                <span>PyTorch</span>
+            </div>
+        </section>
+
+        <section class="courses-section">
+            <h2>Courses Taken</h2>
+
+            <div class="course-toggle">
+                <button onclick="showCourses('semester')">Semester-wise</button>
+                <button onclick="showCourses('subject')">Subject-wise</button>
+            </div>
+
+            <div id="semester-courses" class="course-view active-view">
+                <h3>Semester 1</h3>
+                <div class="course-grid">
+                    <div class="course-box">
+                        <h4>Mathematical Foundations</h4>
+                        <p class="course-code">MA1101</p>
+                        <a href="resources/ma1101.html" class="course-link">Resources →</a>
+                    </div>
+                    <div class="course-box">
+                        <h4>Introduction to Programming</h4>
+                        <p class="course-code">CS1001</p>
+                        <a href="resources/cs1001.html" class="course-link">Resources →</a>
+                    </div>
+                    <!-- Add more -->
+                </div>
+
+                <h3>Semester 2</h3>
+                <div class="course-grid">
+                    <div class="course-box">
+                        <h4>Linear Algebra</h4>
+                        <p class="course-code">MA2101</p>
+                        <a href="resources/uma204.html" class="course-link">Resources →</a>
+                    </div>
+                    <!-- Add more -->
+                </div>
+            </div>
+
+            <div id="subject-courses" class="course-view">
+                <h3>Mathematics</h3>
+                <div class="course-grid">
+                    <div class="course-box">
+                        <h4>Real Analysis</h4>
+                        <p class="course-code">MA3102</p>
+                        <a href="resources/ma3102.html" class="course-link">Resources →</a>
+                    </div>
+                    <!-- Add more -->
+                </div>
+
+                <h3>Computer Science</h3>
+                <div class="course-grid">
+                    <div class="course-box">
+                        <h4>Algorithms</h4>
+                        <p class="course-code">CS2001</p>
+                        <a href="resources/cs2001.html" class="course-link">Resources →</a>
+                    </div>
+                    <!-- Add more -->
+                </div>
+            </div>
+        </section>
     </main>
+
+    <script>
+        function showCourses(type) {
+            document.getElementById('semester-courses').classList.remove('active-view');
+            document.getElementById('subject-courses').classList.remove('active-view');
+
+            document.getElementById(`${type}-courses`).classList.add('active-view');
+        }
+    </script>
 </body>
 </html>
