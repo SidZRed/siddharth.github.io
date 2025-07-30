@@ -153,79 +153,57 @@ footer {
     color: #6e7681;
 }
 
+/* Mobile Styles */
+
 @media (max-width: 768px) {
-  body {
-    font-size: 16px;
-    padding: 10px;
-  }
-
-    .navbar {
-    flex-wrap: wrap;
-    justify-content: center;
+  .navbar {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    white-space: nowrap;
     gap: 10px;
-    }
-
-
-    .nav-links {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    gap: 20px;
-    flex-wrap: nowrap;            /* force single row */
-    overflow-x: auto;             /* allow scrolling if overflow */
-    white-space: nowrap;          /* prevent wrapping */
-    padding: 0;
-    margin: 0;
-    scrollbar-width: none;        /* hide scrollbar for Firefox */
-    }
-
-    .nav-links::-webkit-scrollbar {
-    display: none;                /* hide scrollbar for Chrome/Safari */
-    }
-
-    .nav-links li {
-    flex-shrink: 0;               /* don't allow items to shrink */
-    }
-
-
-  .nav-links li {
-    margin: 5px 0;
+    scrollbar-width: none; /* Firefox */
   }
 
-  .profile {
+  .navbar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
+
+  .navbar li {
+    flex-shrink: 0;
+    margin: 0 12px;
+  }
+
+  .navbar a {
+    font-size: 1rem;
+    padding: 6px 10px;
+  }
+
+  .hero {
     flex-direction: column;
     text-align: center;
   }
 
-  .profile img {
+  .hero-text {
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .hero-image {
+    padding-top: 1rem;
+  }
+
+  .hero-image img {
     width: 90%;
-    max-width: 300px;
-    height: auto;
-    margin-bottom: 15px;
-  }
-
-  .profile h1 {
-    font-size: 1.8rem;
-  }
-
-  .profile p {
-    font-size: 1rem;
-    padding: 0 10px;
+    max-width: 350px;
   }
 }
 
-@media (max-width: 480px) {
-  .nav-links a {
-    font-size: 1rem;
-  }
-
-  .profile h1 {
-    font-size: 1.5rem;
-  }
-
-  .profile p {
-    font-size: 0.95rem;
-  }
-}
