@@ -1,2 +1,1 @@
-# siddharth.github.io
-Personal Webpage
+# Personal Website
