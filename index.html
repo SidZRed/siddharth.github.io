@@ -1,31 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Siddharth | Home</title>
-  <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siddharth Reddy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #121212;
+            --text-color: #e0e0e0;
+            --accent-color: #64ffda;
+            --nav-bg: #1e1e1e;
+            --nav-hover: #333;
+            --font: 'Fira Sans', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            font-family: var(--font);
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: var(--nav-bg);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .navbar {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 1rem 0;
+        }
+
+        .navbar li {
+            margin: 0 15px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 600;
+            transition: all 0.3s ease;
+            padding: 6px 12px;
+            border-radius: 5px;
+        }
+
+        .navbar a:hover,
+        .navbar a.active {
+            background-color: var(--nav-hover);
+            color: var(--accent-color);
+        }
+
+        .hero {
+            flex-grow: 1;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 3rem;
+        }
+
+        .hero-text h1 {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+
+        .hero-image img {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            border: 3px solid var(--accent-color);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <header>
-    <nav class="navbar">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="research.html">Research & Projects</a>
-      <a href="blog.html">Blog</a>
-      <a href="skills.html">Skills</a>
-      <a href="fun.html">Fun</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main class="container">
-    <h1>Welcome to My Personal Website</h1>
-    <p>This site hosts my academic work, blog, and personal experiments — explore around!</p>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Siddharth Reddy</p>
-  </footer>
+    <main class="hero">
+        <div class="hero-text">
+            <h1>Hi, I'm Siddharth Reddy</h1>
+            <p>Undergraduate @ IISc | Game Theory, ML, Theoretical CS</p>
+        </div>
+        <div class="hero-image">
+            <img src="assets/images/profile_pic.png" alt="Your Photo">
+        </div>
+    </main>
 </body>
+
 </html>
