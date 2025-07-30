@@ -159,10 +159,12 @@ footer {
     padding: 10px;
   }
 
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-  }
+    .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    }
+
 
   .nav-links {
     flex-direction: column;
