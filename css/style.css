@@ -183,3 +183,49 @@ footer {
         gap: 1rem;
     }
 }
+
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+        margin-top: 1.5rem;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        padding: 0.8rem 0.5rem;
+    }
+
+    .navbar li {
+        margin: 0.5rem;
+    }
+
+    .navbar a {
+        font-size: 1rem;
+        padding: 6px 10px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+}
